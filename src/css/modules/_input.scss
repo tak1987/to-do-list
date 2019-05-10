@@ -1,0 +1,40 @@
+.input-container {
+    display: flex;
+
+    #toggle-all-button {
+        visibility: hidden;
+        width: 60px;
+        margin: 24px 0 16px 0;
+        padding-right: 8px;
+        font-size: 1.3rem;
+        color: #EDEDED;
+        text-align: center;
+
+        .display {
+            visibility: visible;
+        }
+
+        .all-completed {
+            color: inherit;
+        }
+    }
+
+    #todoInput {
+        width: calc(100% - 60px);
+        border: none;
+        padding: 16px 35px 16px 0;
+        font-size: 1.5rem;
+
+        &::placeholder {
+            font-style: italic;
+            color: #EDEDED;
+            font-weight: 200;
+        }
+
+        &:focus {
+            outline: none;
+            color: inherit;
+            font-style: normal;
+        }
+    }
+}

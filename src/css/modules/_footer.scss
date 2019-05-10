@@ -1,0 +1,22 @@
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    color: #bfbfbf;
+    font-size: 10px;
+
+    p {
+        font-size: inherit;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: inherit;
+            font-weight: 400;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

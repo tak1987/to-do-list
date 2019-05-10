@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Todo List</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet"></head>
+    <body>
+        <header>
+            <h1>todos</h1>
+        </header>
+
+        <div class="todo-app">
+            <div class="input-container">
+                <i id="toggle-all-button" class="fas fa-chevron-down"></i>
+                <input placeholder="What needs to be done?" type="text" id="todoInput" autofocus>
+            </div>   
+            <div class="todo-container">
+                <ul class="todo-items"></ul>
+            </div>  
+            <div class="filter-container">
+                <p class="active-todo-counter"></p>
+                <ul class="buttons">
+                    <li id="all" class="button selected"><a>All</a></li>
+                    <li id="active" class="button"><a>Active</a></li>
+                    <li id="completed" class="button"><a>Completed</a></li>
+                </ul>
+                <p id="clear-completed-button">Clear completed</p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Created by <a target="_blank" href="https://github.com/tak1987">tak1987</a></p>           
+        </footer>
+
+    <script type="text/javascript" src="bundle.js"></script></body>
+</html>

@@ -1,0 +1,61 @@
+.filter-container {
+    display: none;
+    position: relative;
+    padding: 0.3rem;
+
+    &:display {
+        display: block;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+
+        .button {
+            list-style-type: none;
+            margin: 3px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+
+             a {
+                display: block;
+                padding: 3px 7px;
+                cursor: pointer;
+            }
+
+            &.selected {
+                border-color: #af2f2f26;
+            }
+
+            &:hover {
+                border-color: #ecd7d64d;
+            }
+        }
+    }
+
+    .active-todo-counter {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+    } 
+
+    #clear-completed-button {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        .active {
+            display: block;
+        }
+
+        &:hover {
+            text-decoration: underline #bfbfbf;
+        }
+    }
+
+    
+}
